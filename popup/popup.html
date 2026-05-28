@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PriceScope</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">PriceScope</span>
+      </div>
+      <div class="header-right">
+        <span class="cache-indicator" id="cacheIndicator"></span>
+        <div class="status-dot" id="statusDot"></div>
+      </div>
+    </header>
+
+    <!-- Product Detection Section -->
+    <section class="product-section">
+      <div class="label">DETECTED PRODUCT</div>
+      <div class="product-name" id="productName">Scanning page...</div>
+      <div class="product-meta" id="productMeta">—</div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Price Results -->
+    <section class="prices-section">
+      <div class="label">PRICE COMPARISON</div>
+      <div class="price-list" id="priceList">
+        <div class="loading-state">
+          <div class="spinner"></div>
+          <span>Fetching live prices...</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Deal Banner -->
+    <div class="best-deal" id="bestDeal" style="display:none;">
+      <span class="best-deal-tag">BEST DEAL</span>
+      <span class="best-deal-store" id="bestDealStore"></span>
+      <span class="best-deal-price" id="bestDealPrice"></span>
+    </div>
+
+    <!-- Action Button -->
+    <button class="refresh-btn" id="refreshBtn">
+      <span class="btn-icon">↻</span> Re-scan Page
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span id="footerText">Powered by Google Shopping</span>
+    </footer>
+
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
