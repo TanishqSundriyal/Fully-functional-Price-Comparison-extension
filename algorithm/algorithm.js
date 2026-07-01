@@ -84,7 +84,7 @@ class MinHeap {
 
 /**
  * ─────────────────────────────────────────────────────
- * PRICE COMPARISON ENGINE
+ * Price Comparison Engine
  * Uses Min-Heap + sorting to rank all prices and
  * identify the best deal with savings calculation.
  * ─────────────────────────────────────────────────────
